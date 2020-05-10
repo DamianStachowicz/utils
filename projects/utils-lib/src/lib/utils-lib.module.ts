@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
+import { ModalComponent } from './components/modal/modal.component';
 
 @NgModule({
-  declarations: [],
+  declarations: [ModalComponent],
   imports: [],
-  exports: [],
+  exports: [ModalComponent],
 })
 export class UtilsLibModule {}

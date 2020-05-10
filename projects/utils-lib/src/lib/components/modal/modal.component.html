@@ -1,0 +1,5 @@
+<div class="overlay" (click)="overlayClicked.emit(true)"></div>
+<div class="modal">
+  <div class="modal__text"><ng-content select="[text]"></ng-content></div>
+  <div class="modal__buttons"><ng-content select="[buttons]"></ng-content></div>
+</div>

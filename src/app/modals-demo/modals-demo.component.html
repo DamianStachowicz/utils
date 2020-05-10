@@ -1,0 +1,23 @@
+<button class="btn" (click)="modalOpen = true">Modal example</button>
+<lib-modal *ngIf="modalOpen" (overlayClicked)="modalOpen = false"
+  ><div text>This is an example of a simple imformation pop up dialog.</div>
+  <div buttons>
+    <button class="btn" (click)="modalOpen = false">Ok</button>
+  </div></lib-modal
+>
+
+<button class="btn" (click)="openDoubleBtnDialog()">
+  Double button example
+</button>
+<lib-modal *ngIf="modalOpen" (overlayClicked)="modalOpen = false"
+  ><div
+    [ngStyle]="{ 'background-color': dialogBgColor, color: dialogTxtColor }"
+    text
+  >
+    You can toggle background color on this text.
+  </div>
+  <div buttons>
+    <button class="btn" (click)="toggleDialogColors()">Change color</button>
+    <button class="btn" (click)="modalOpen = false">Close</button>
+  </div></lib-modal
+>
